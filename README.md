@@ -6,7 +6,7 @@
 
 <img alt="" align="right" width="150" height="150" src = "./image/postgresql.png" title = "postgres logo" alt = "Postgre logo">   
 
-About an ETL, collecting .json files, and organizing the database into snowflakes 
+About an ETL, collecting .json files, and organizing the database in start schemas
 
 ### Table of contents
 
@@ -54,8 +54,12 @@ We will need to:
   
 ## Getting started
 
-  * ce que je sais ( acompleter)
-  * programme a installer (postgres, anaconda)
+  * to restart the database and clear the database, run `create_tables.py`
+  * run the Etl with `etl.py`
+  * see the output with `test.ipynb`
+  * Becareful, restart `test.ipynb` just after his run and be sure that `etl.ipynb` is `conn.close()`!!
+
+  
 
 ## Ressources
   
@@ -172,7 +176,7 @@ Before working with Postgres and queries, I explored datasets with Python.
 I've noticed that the files can't match each other because there's no `songid` and `artistid` in common. I've explored them to find the ones that would match this criteria in another jupyter-notebook.
 
 #### ERD
-![Erd snowflaks](../image/diag_project1.png)
+![Erd star schemas](./image/star_schema.png)
 * I decide "varchar" for all none numerics values, except "text" for `user_agent` and in songplays table and `location` in both: it's a long string. `start_time` in songplays table will be in bigint because it's a timestamp with miliseconds. `start_time` will be a regular timestamp, formated in the process. `user_id` is bigint, I hope lot of users for Sparkify.
 * `user_id`, `artist-id`, `song_id`, `start_time` become the primaries key of each dimension tables and `songplay_id` will be created by a serie.  
 
@@ -213,10 +217,17 @@ song_select = ("""
 
 ```
 
-#### Web Links
+#### Web Links 
 
-[INSERT INTO UPDATE SET =excluted](https://stackoverflow.com/questions/35159431/on-conflict-do-update-has-missing-from-clause)
+[About `INSERT INTO UPDATE SET =excluted`](https://stackoverflow.com/questions/35159431/on-conflict-do-update-has-missing-from-clause)
 
-## TODO
-* ligne 6 :
-    * remettre cette ligne: `conn = psycopg2.connect("host=127.0.0.1 dbname=studentdb user=student password=student")`
+[About Normalization](https://www.itprotoday.com/sql-server/sql-design-why-you-need-database-normalization)
+
+[About `%s` in sql series](https://www.drupal.org/forum/support/module-development-and-code-questions/2007-03-16/d-and-s-in-sql-queries)
+
+## my todo
+* etl.ipynb ligne 6 :
+    * remettre cette ligne en rendant le sujet: `conn = psycopg2.connect("host=127.0.0.1 dbname=studentdb user=student password=student")`
+    * mettre dbname=sparkydb pour mon usage
+* put pictures about my output
+* add my jupyter notebook?
