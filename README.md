@@ -6,7 +6,7 @@
 
 <img alt="" align="right" width="150" height="150" src = "./image/postgresql.png" title = "postgres logo" alt = "Postgre logo">   
 
-About an ETL, collecting .json files, and organizing the database in start schemas
+About an ETL, collecting .json files, and organizing the database in star schemas
 
 ### Table of contents
 
@@ -226,7 +226,7 @@ song_select = ("""
 [About `%s` in sql series](https://www.drupal.org/forum/support/module-development-and-code-questions/2007-03-16/d-and-s-in-sql-queries)
 
 ## my todo
-* etl.ipynb ligne 6 :
+* create_table.ipynb ligne 6 :
     * remettre cette ligne en rendant le sujet: `conn = psycopg2.connect("host=127.0.0.1 dbname=studentdb user=student password=student")`
     * mettre dbname=sparkydb pour mon usage
 * put pictures about my output
