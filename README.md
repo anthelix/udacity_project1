@@ -1,10 +1,10 @@
 ##### Udacity Data Engineering Nanodegree
+<img alt="" align="right" width="150" height="150" src = "./image/postgresql.png" title = "postgres logo" alt = "Postgre logo">
 
+</br>
+</br>
 
 # Project 1 : Data Modeling with Postgres 
-
-
-<img alt="" align="right" width="150" height="150" src = "./image/postgresql.png" title = "postgres logo" alt = "Postgre logo">   
 
 About an ETL, collecting .json files, and organizing the database in star schemas
 
