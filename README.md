@@ -29,7 +29,7 @@ About an ETL, collecting .json files, and organizing the database in star schema
       - [Discuss about the databases](#discuss-about-the-database)
       - [Erd](#erd)
       - [Queries](#queries)
-      - [Weblinks](#web-links)
+  - [Weblinks](#web-links)
   - [TODO](#todo)
 
 <!--CACHER-->
@@ -217,17 +217,10 @@ song_select = ("""
 
 ```
 
-#### Web Links 
+## Web Links 
 
 [About `INSERT INTO UPDATE SET =excluted`](https://stackoverflow.com/questions/35159431/on-conflict-do-update-has-missing-from-clause)
 
 [About Normalization](https://www.itprotoday.com/sql-server/sql-design-why-you-need-database-normalization)
 
 [About `%s` in sql series](https://www.drupal.org/forum/support/module-development-and-code-questions/2007-03-16/d-and-s-in-sql-queries)
-
-## my todo
-* create_table.ipynb ligne 6 :
-    * remettre cette ligne en rendant le sujet: `conn = psycopg2.connect("host=127.0.0.1 dbname=studentdb user=student password=student")`
-    * mettre dbname=sparkydb pour mon usage
-* put pictures about my output
-* add my jupyter notebook?
