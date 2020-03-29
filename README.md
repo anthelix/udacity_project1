@@ -1,5 +1,5 @@
 ###### Udacity Data Engineering Nanodegree
-<img alt="" align="right" width="150" height="150" src = "postgresql.png" title = "postgres logo" alt = "Postgre logo">
+<img alt="" align="right" width="150" height="150" src = "image/postgresql.png" title = "postgres logo" alt = "Postgre logo">
 
 </br>
 </br>
